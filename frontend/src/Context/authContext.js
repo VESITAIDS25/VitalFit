@@ -21,15 +21,17 @@ const AuthProvider = ({ children }) => {
             });
           }
         } catch (error) {
-          // console.log(error);
           if (error.response.status !== 401) {
             toast.error("Something went wrong");
+          } else {
+            // navigate('/login')
+            console.log(error);
           }
         }
-        //eslint-disable-next-line
       }
     }
     authCall();
+    //eslint-disable-next-line
   }, []);
   return (
     <AuthContext.Provider value={[auth, setAuth]}>

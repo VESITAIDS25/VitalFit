@@ -69,7 +69,32 @@ router.get("/google-api", async (req, res) => {
               endTimeMillis: endTime,
             },
           });
+
+          const Data = await fitness.users.dataset.aggregate({
+            userId: "me",
+            requestBody: {
+              "aggregateBy": [
+                {
+                  "dataTypeName": "com.google.step_count.delta",
+                  "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps"
+                },
+                {
+                  "dataTypeName": "com.google.weight.summary",
+                  "dataSourceId": "derived:com.google.weight:com.google.android.gms:merge_weight"
+                },
+                {
+                  "dataTypeName": "com.google.distance.delta",
+                  "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:merge_distance_delta"
+                }
+              ],
+              "bucketByTime": { "durationMillis": 86400000 },
+              "startTimeMillis": start.getTime(),
+              "endTimeMillis": end.getTime()
+            },
+          });
   
+          console.log(Data)
+
           let totalSteps = 0;
           if (stepData?.data?.bucket) {
             stepData.data.bucket.forEach((bucket) => {

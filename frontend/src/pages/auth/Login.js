@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { useAuth } from "../../Context/authContext";
 
 export default function Login() {
   const [user, setUserName] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
+  const location = useLocation();
+  const [auth, setAuth] = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +21,8 @@ export default function Login() {
       });
       if (res.data?.success) {
         toast.success("Successfully Logged in ");
-        navigate("/");
+        setAuth(res.data.sessionUser);
+        navigate(location.state || "/");
       } else {
         toast.error(res.data);
         console.log(res.data);

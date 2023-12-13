@@ -1,5 +1,6 @@
 import Login from './components/auth/login';
 import Register from './components/auth/register';
+import { Frame } from './components/home/main';
 import Board from './components/leaderboard/board';
 import './components/leaderboard/style.css';
 import { Routes, Route } from 'react-router-dom';
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/main" element={<Frame/>} />
       </Routes>
     </div>
   );

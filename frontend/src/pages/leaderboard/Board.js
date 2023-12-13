@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Profiles from './profiles';
-import { Leaderboard } from './database';
+import React, { useState } from "react";
+import Profiles from "./Profiles";
+import { Leaderboard } from "./Database";
+import "./style.css";
 
 export default function Board() {
   const [period, setPeriod] = useState(0);
@@ -17,21 +18,21 @@ export default function Board() {
         <button
           onClick={handleClick}
           data-id="7"
-          className={`duration-btn ${period === '7' ? 'active' : ''}`}
+          className={`duration-btn ${period === "7" ? "active" : ""}`}
         >
           7 Days
         </button>
         <button
           onClick={handleClick}
           data-id="30"
-          className={`duration-btn ${period === '30' ? 'active' : ''}`}
+          className={`duration-btn ${period === "30" ? "active" : ""}`}
         >
           30 Days
         </button>
         <button
           onClick={handleClick}
           data-id="0"
-          className={`duration-btn ${period === '0' ? 'active' : ''}`}
+          className={`duration-btn ${period === "0" ? "active" : ""}`}
         >
           All-Time
         </button>

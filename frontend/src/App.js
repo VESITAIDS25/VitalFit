@@ -1,18 +1,20 @@
-import Login from './components/auth/login';
-import Register from './components/auth/register';
-import Board from './components/leaderboard/board';
-import './components/leaderboard/style.css';
-import { Routes, Route } from 'react-router-dom';
-// import './components/auth/s';
+import './App.css';
+import {Routes,Route} from 'react-router-dom'
+import Register from './pages/auth/Register';
+import Login from './pages/auth/Login'
+import PageNotFound from './components/PageNotFound'
+import Home from './pages/Home';
+import Board from './pages/leaderboard/Board'
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/leader-board" element={<Board/>}/>
+      <Route path="*" element={<PageNotFound/>}/>
+    </Routes>
   );
 }
 

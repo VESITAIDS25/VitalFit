@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Profiles({ Leaderboard }) {
   return <div id="profile">{Item(Leaderboard)}</div>;
@@ -9,9 +9,9 @@ function Item(data) {
     <>
       {data.map((value, index) => (
         <div
-          className={`flex ${index === 0 ? 'glow1' : ''} ${
-            index === 1 ? 'glow2' : ''
-          } ${index === 2 ? 'glow3' : ''}`}
+          className={`flex ${index === 0 ? "glow1" : ""} ${
+            index === 1 ? "glow2" : ""
+          } ${index === 2 ? "glow3" : ""}`}
           key={index}
         >
           <div className="item">

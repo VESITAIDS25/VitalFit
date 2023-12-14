@@ -1,13 +1,15 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const credentials = require("./middleware/credentials");
-// const corsOptions = require("./config/corsOptions");
+const corsOptions = require("./config/corsOptions");
 
 const app = express();
+app.use(express.static(path.join(__dirname, "..", "frontend", "build")));
 app.use(credentials);
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -38,17 +40,19 @@ app.use("/login", require("./routes/auth"));
 app.use("/logout", require("./routes/logout"));
 app.use("/authTest", require("./routes/authTest"));
 
-app.use("/v1/api", require("./routes/api"));
+app.use("/user/googleApi", require("./routes/googleApi"));
+app.use("/v1/api", require("./routes/googleRedirect"));
 
 app.all("*", (req, res) => {
-  res.status(404);
-  if (req.accepts("json")) {
-    res.json({ error: "404 Not Found" });
-  } else if (req.accepts("html")) {
-    res.sendFile(path.join(__dirname, "views", "404.html"));
-  } else {
-    res.type("txt").send("404 Not Found");
-  }
+  res.sendFile(path.join(__dirname, "..", "frontend", "build", "index.html"));
+  // res.status(404);
+  // if (req.accepts("json")) {
+  //   res.json({ error: "404 Not Found" });
+  // } else if (req.accepts("html")) {
+  //   res.sendFile(path.join(__dirname, "views", "404.html"));
+  // } else {
+  //   res.type("txt").send("404 Not Found");
+  // }
 });
 
 app.use((err, req, res, next) => {

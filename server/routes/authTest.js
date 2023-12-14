@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", auhtenticate, (req, res) => {
   res.json({
     msg: "You are authenticated",
-    sessionUser:req.session.user
+    sessionUser: req.session.user,
   });
 });
 
@@ -16,15 +16,11 @@ router.get("/user", authorize(ROLE_GROUPS.Group1), (req, res) => {
   });
 });
 
-router.get(
-  "/nutrionist",
-  authorize(ROLE_GROUPS.Group2),
-  (req, res) => {
-    res.json({
-      msg: "You are authorized",
-    });
-  }
-);
+router.get("/nutrionist", authorize(ROLE_GROUPS.Group2), (req, res) => {
+  res.json({
+    msg: "You are authorized",
+  });
+});
 
 // router.get(
 //   "/role3",

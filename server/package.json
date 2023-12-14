@@ -5,23 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "check": "atlas accessLists list"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ../frontend",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.2",
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
     "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "googleapis": "^129.0.0",
     "mongoose": "^7.6.1",
     "morgan": "^1.10.0",
-    "googleapis": "^129.0.0",
-    "axios": "^1.6.2",
-    "body-parser": "^1.20.2", 
     "query-string": "^8.1.0",
     "request": "^2.88.2",
     "url-parse": "^1.5.10"

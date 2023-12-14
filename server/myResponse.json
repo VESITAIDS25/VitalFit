@@ -1,0 +1,550 @@
+{
+  "resultData": {
+    "config": {
+      "url": "https://fitness.googleapis.com/fitness/v1/users/me/dataSources",
+      "method": "GET",
+      "userAgentDirectives": [
+        {
+          "product": "google-api-nodejs-client",
+          "version": "7.0.1",
+          "comment": "gzip"
+        }
+      ],
+      "headers": {
+        "x-goog-api-client": "gdcl/7.0.1 gl-node/20.9.0",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "google-api-nodejs-client/7.0.1 (gzip)",
+        "Authorization": "Bearer ya29.a0AfB_byD9P44Vr2nh3ZdFUqR-OgXYNM9aJsAwSbf2EykU7wQEX5pU8prlkuSqCReNfwnqMfQzwtXHLmJAfceRys5vAJ6MHqvR9iB98ARdsVWp7ixA_YW3R3E_NAY8hnm60_L_9fAM4s8v1nEVPAd-0cYvs3V4fJsy5gaCgYKASESARISFQHGX2Mi8OAhFJf7MzASS1pbDsOImg0169"
+      },
+      "params": {},
+      "retry": true,
+      "responseType": "unknown"
+    },
+    "data": {
+      "dataSource": [
+        {
+          "dataStreamId": "derived:com.google.active_minutes:com.google.android.fit:Xiaomi:220333QBI:77c18c33:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.active_minutes",
+            "field": [{ "name": "duration", "format": "integer" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.active_minutes:com.google.android.fit:Xiaomi:Redmi Note 7 Pro:58d57d09:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.active_minutes",
+            "field": [{ "name": "duration", "format": "integer" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.active_minutes:com.google.android.fit:asus:ASUS_X00TD:e7f3e201:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.active_minutes",
+            "field": [{ "name": "duration", "format": "integer" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.active_minutes:com.google.android.gms:merge_active_minutes",
+          "dataStreamName": "merge_active_minutes",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.active_minutes",
+            "field": [{ "name": "duration", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.apps.fitness:Xiaomi:220333QBI:77c18c33:session_activity_segment",
+          "dataStreamName": "session_activity_segment",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.apps.fitness" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.apps.fitness:session_activity_segment",
+          "dataStreamName": "session_activity_segment",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.apps.fitness" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.fit:Xiaomi:220333QBI:77c18c33:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.fit:Xiaomi:Redmi Note 7 Pro:58d57d09:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.fit:asus:ASUS_X00TD:e7f3e201:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.gms:merge_activity_segments",
+          "dataStreamName": "merge_activity_segments",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.gms:merge_activity_segments_local",
+          "dataStreamName": "merge_activity_segments_local",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.google.android.gms:session_activity_segment",
+          "dataStreamName": "session_activity_segment",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.activity.segment:com.noisefit:session_activity_segment",
+          "dataStreamName": "session_activity_segment",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.noisefit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.calories.bmr:com.google.android.gms:merged",
+          "dataStreamName": "merged",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.calories.bmr",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.calories.expended:com.google.android.fit:Xiaomi:220333QBI:77c18c33:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.calories.expended",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.calories.expended:com.google.android.fit:Xiaomi:Redmi Note 7 Pro:58d57d09:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.calories.expended",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.calories.expended:com.google.android.fit:asus:ASUS_X00TD:e7f3e201:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.calories.expended",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+          "dataStreamName": "merge_calories_expended",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.calories.expended",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.heart_minutes:com.google.android.fit:Xiaomi:220333QBI:77c18c33:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.heart_minutes",
+            "field": [{ "name": "intensity", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.heart_minutes:com.google.android.fit:Xiaomi:Redmi Note 7 Pro:58d57d09:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.heart_minutes",
+            "field": [{ "name": "intensity", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.heart_minutes:com.google.android.fit:asus:ASUS_X00TD:e7f3e201:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.heart_minutes",
+            "field": [{ "name": "intensity", "format": "floatPoint" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.heart_minutes:com.google.android.gms:merge_heart_minutes",
+          "dataStreamName": "merge_heart_minutes",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.heart_minutes",
+            "field": [{ "name": "intensity", "format": "floatPoint" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.step_count.delta:com.google.android.fit:Xiaomi:220333QBI:77c18c33:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.step_count.delta:com.google.android.fit:Xiaomi:Redmi Note 7 Pro:58d57d09:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.step_count.delta:com.google.android.fit:asus:ASUS_X00TD:e7f3e201:top_level",
+          "dataStreamName": "top_level",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "application": { "packageName": "com.google.android.fit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+          "dataStreamName": "estimated_steps",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "derived:com.google.step_count.delta:com.google.android.gms:merge_step_deltas",
+          "dataStreamName": "merge_step_deltas",
+          "type": "derived",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.gms" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.activity.segment:com.google.android.apps.fitness:user_input",
+          "dataStreamName": "user_input",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.activity.segment",
+            "field": [{ "name": "activity", "format": "integer" }]
+          },
+          "application": { "packageName": "com.google.android.apps.fitness" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.calories.expended:com.noisefit:noise_activity - Calories",
+          "dataStreamName": "noise_activity - Calories",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.calories.expended",
+            "field": [{ "name": "calories", "format": "floatPoint" }]
+          },
+          "application": { "packageName": "com.noisefit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.step_count.cumulative:Xiaomi:220333QBI:77c18c33:pedometer  Non-wakeup",
+          "dataStreamName": "pedometer  Non-wakeup",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.step_count.cumulative",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "77c18c33",
+            "type": "phone",
+            "version": "",
+            "model": "220333QBI",
+            "manufacturer": "Xiaomi"
+          },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.step_count.cumulative:Xiaomi:Redmi Note 7 Pro:58d57d09:pedometer  Non-wakeup",
+          "dataStreamName": "pedometer  Non-wakeup",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.step_count.cumulative",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "58d57d09",
+            "type": "phone",
+            "version": "",
+            "model": "Redmi Note 7 Pro",
+            "manufacturer": "Xiaomi"
+          },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.step_count.cumulative:asus:ASUS_X00TD:e7f3e201:Step Counter",
+          "dataStreamName": "Step Counter",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.step_count.cumulative",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "device": {
+            "uid": "e7f3e201",
+            "type": "phone",
+            "version": "",
+            "model": "ASUS_X00TD",
+            "manufacturer": "asus"
+          },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.step_count.delta:com.noisefit:noise_activity - Steps",
+          "dataStreamName": "noise_activity - Steps",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "application": { "packageName": "com.noisefit" },
+          "dataQualityStandard": []
+        },
+        {
+          "dataStreamId": "raw:com.google.step_count.delta:com.noisefit:noise_activity - step count",
+          "dataStreamName": "noise_activity - step count",
+          "type": "raw",
+          "dataType": {
+            "name": "com.google.step_count.delta",
+            "field": [{ "name": "steps", "format": "integer" }]
+          },
+          "application": { "packageName": "com.noisefit" },
+          "dataQualityStandard": []
+        }
+      ]
+    },
+    "headers": {
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "cache-control": "private",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 13 Dec 2023 15:11:06 GMT",
+      "server": "ESF",
+      "transfer-encoding": "chunked",
+      "vary": "Origin, X-Origin, Referer",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "request": {
+      "responseURL": "https://fitness.googleapis.com/fitness/v1/users/me/dataSources"
+    }
+  }
+}

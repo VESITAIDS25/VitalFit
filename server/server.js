@@ -7,7 +7,6 @@ const MongoStore = require("connect-mongo");
 const credentials = require("./middleware/credentials");
 // const corsOptions = require("./config/corsOptions");
 
-
 const app = express();
 app.use(credentials);
 app.use(cors());
@@ -39,16 +38,14 @@ app.use("/login", require("./routes/auth"));
 app.use("/logout", require("./routes/logout"));
 app.use("/authTest", require("./routes/authTest"));
 
-
-
 app.use("/v1/api", require("./routes/api"));
 
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("json")) {
-    res.sendFile(path.join(__dirname, "views", "404.html"));
-  } else if (req.accepts("html")) {
     res.json({ error: "404 Not Found" });
+  } else if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
   } else {
     res.type("txt").send("404 Not Found");
   }

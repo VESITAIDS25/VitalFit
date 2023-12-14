@@ -15,6 +15,19 @@ Welcome to VitalFit, your comprehensive health and fitness tracker designed to e
 
 ### 💻 Tech Stack:
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
+
+## Features
+
+1. <strong><u>Google Fit API Integration</u></strong> : Seamlessly sync your fitness data with the Google Fit API for accurate step counts, heart points, and calorie tracking.
+
+2. <strong>Visual Progress Tracking</strong> : Dynamic graphs and charts provide an intuitive visual representation of your fitness journey, making progress tracking a captivating experience.
+
+3. <strong>Leaderboard and Community</strong> : Engage in friendly competition, compare achievements on the leaderboard, and foster a supportive fitness community.
+
+4. <strong>Hydration Reminders</strong> : Beyond traditional metrics, receive timely notifications to stay hydrated, promoting holistic well-being throughout the day.
+
+5. <strong>Comprehensive Data Insights</strong> : From step-calorie correlations to heart point distribution, gain actionable insights through interactive graphs for informed fitness decisions.
+   
 ## Project Structure
 
 The entire codebase is located in the `master` branch. The project is organized as follows:
@@ -43,13 +56,16 @@ To run the Rhythm application locally, follow these steps:
    ```bash
    cd backend
     npm i
-    npm run start
    ```
 3.2. Frontend:
 
    ```bash
    cd frontend
     npm i
-    npm run start
+   ```
+4. run:
+   ```bash
+   cd backend
+    npm run dev
    ```
 

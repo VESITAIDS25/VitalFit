@@ -178,7 +178,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         <ul className="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6">
                           <li>
                             <NavLink
-                              to="/"
+                              to="/dashboard"
                               className={({ isActive }) =>
                                 'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
                                 (isActive && '!text-white')
@@ -199,7 +199,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* <!-- Menu Item Calendar --> */}
               <li>
                 <NavLink
-                  to="/calendar"
+                  to="/dashboard/calendar"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('calendar') &&
                     'bg-graydark dark:bg-meta-4'
@@ -226,7 +226,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* <!-- Menu Item Profile --> */}
               <li>
                 <NavLink
-                  to="/profile"
+                  to="/dashboard/profile"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('profile') && 'bg-graydark dark:bg-meta-4'
                   }`}
@@ -260,7 +260,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* <!-- Menu Item Tables --> */}
               <li>
                 <NavLink
-                  to="/tables"
+                  to="/dashboard/tables"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('tables') && 'bg-graydark dark:bg-meta-4'
                   }`}
@@ -298,7 +298,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* <!-- Menu Item Settings --> */}
               <li>
                 <NavLink
-                  to="/settings"
+                  to="/dashboard/settings"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('settings') &&
                     'bg-graydark dark:bg-meta-4'
@@ -350,7 +350,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* <!-- Menu Item Chart --> */}
               <li>
                 <NavLink
-                  to="/chart"
+                  to="/dashboard/chart"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('chart') && 'bg-graydark dark:bg-meta-4'
                   }`}

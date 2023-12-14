@@ -77,3 +77,4 @@ firstly one has to have login with email in which the google fit is connected to
     npm run dev
    ```
 
+<a href="https://youtu.be/vL9DJCSRTo8">Video Link</a>

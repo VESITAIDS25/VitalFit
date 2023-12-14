@@ -5,12 +5,12 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const credentials = require("./middleware/credentials");
-const corsOptions = require("./config/corsOptions");
+// const corsOptions = require("./config/corsOptions");
 
 
 const app = express();
 app.use(credentials);
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
@@ -35,7 +35,7 @@ app.use(
 app.use(morgan("dev"));
 app.use("/", require("./routes/root"));
 app.use("/register", require("./routes/register"));
-app.use("/auth", require("./routes/auth"));
+app.use("/login", require("./routes/auth"));
 app.use("/logout", require("./routes/logout"));
 app.use("/authTest", require("./routes/authTest"));
 

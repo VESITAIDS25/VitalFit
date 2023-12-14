@@ -23,11 +23,9 @@ function App() {
     <Routes>
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/" element={<Home />} />
-      {/* <Route path="/leader-board" element={<PrivateRoute />}>
-        
-      </Route> */}
-      <Route element={<DefaultLayout />}>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/dashboard" element={<PrivateRoute />}>
+      <Route path = "" element={<DefaultLayout />}>
           <Route index element={<ECommerce />} />
           {routes.map((routes, index) => {
             const { path, component: Component } = routes;
@@ -43,6 +41,7 @@ function App() {
               />
             );
           })}
+          </Route>
         </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

@@ -16,9 +16,12 @@ const handleLogin = async (req, res) => {
     const sessionUser = serializeSessionUser(foundUser);
     req.session.user = sessionUser;
     // Send authorization roles and access token to user
-    res.json({ ...sessionUser });
+    res.status(200).send({
+      success:true,
+      message:"Success",
+      sessionUser });
   } else {
-    res.sendStatus(401);
+    res.status(401).end();
   }
 };
 

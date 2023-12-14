@@ -11,7 +11,7 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     async function authCall() {
-      if (!auth.role) {
+      if (!auth.roles) {
         try {
           const res = await axios.get("/authTest");
           if (res) {

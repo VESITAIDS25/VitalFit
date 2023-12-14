@@ -1,3 +1,5 @@
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/logo-t.png" alt="VitalFit Logo" width="300">
+
 # VitalFit - Health and Fitness Tracker (HealthCare):
 
 ## Project Overview
@@ -19,3 +21,35 @@ The entire codebase is located in the `master` branch. The project is organized 
 
 - `backend/`: Contains backend for the platform.
 - `Frontend/`: Contains the front-end of website
+
+## Getting Started
+
+To run the Rhythm application locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/VESITAIDS25/VitalFit.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd VitalFit
+   ```
+
+3.1. Backend:
+
+   ```bash
+   cd backend
+    npm i
+    npm run start
+   ```
+3.2. Frontend:
+
+   ```bash
+   cd frontend
+    npm i
+    npm run start
+   ```
+

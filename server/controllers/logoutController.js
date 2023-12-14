@@ -10,9 +10,7 @@ const handleLogout = async (req, res) => {
   // If session, destroy the session to logout
   req.session.destroy((err) => {
     if (err) throw err;
-    res.json({
-      msg: "Successfully Logged Out",
-    });
+    res.redirect('/login');
   });
 };
 

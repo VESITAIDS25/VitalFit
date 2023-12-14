@@ -27,18 +27,26 @@ Welcome to VitalFit, your comprehensive health and fitness tracker designed to e
 4. <strong>Hydration Reminders</strong> : Beyond traditional metrics, receive timely notifications to stay hydrated, promoting holistic well-being throughout the day.
 
 5. <strong>Comprehensive Data Insights</strong> : From step-calorie correlations to heart point distribution, gain actionable insights through interactive graphs for informed fitness decisions.
-   
+
+## Screenshots
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/assets/home.jpg">
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/assets/whited.jpg">
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/assets/blackd.jpg">
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/assets/leaderboard.jpg">
+<img src="https://github.com/VESITAIDS25/VitalFit/blob/master/assets/steps.jpg">
+
+
 ## Project Structure
 
 The entire codebase is located in the `master` branch. The project is organized as follows:
 
-- `backend/`: Contains backend for the platform.
+- `server/`: Contains backend for the platform.
 - `Frontend/`: Contains the front-end of website
 
 ## Getting Started
 
-To run the Rhythm application locally, follow these steps:
-
+To run the VitalFit application locally, follow these steps:
+firstly one has to have login with email in which the google fit is connected to .
 1. Clone the repository:
 
    ```bash

@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./Context/authContext";
 import './satoshi.css';
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AuthProvider>
